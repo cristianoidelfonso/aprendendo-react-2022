@@ -20,15 +20,19 @@ function App() {
     
     <div className="App">
       <Header />
-      <button
+      <Button
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        margin="1vmin 1vmin 1vmin auto"
+        border="none"
+        color="pink"
+        height="100px"
         onClick={createTweet}
-        style={{
-          display: 'flex',
-          margin: '1vmin 1vmin 1vmin auto'
-        }}
-      >
-        Add tweet
-      </button>
+        width="200px"
+        children="Add tweet"
+        radius="5%"
+      />
       <AppRoutes />
       
       {
